@@ -1,0 +1,13 @@
+site_name: M2
+nav:
+  - 'toc.md'
+
+
+theme:
+    name: readthedocs
+    
+markdown_extensions:
+    - toc:
+        permalink: "#"
+        baselevel: 2
+        separator: "_"
