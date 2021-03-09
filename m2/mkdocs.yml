@@ -1,13 +1,26 @@
 site_name: M2
 nav:
-  - 'toc.md'
-
-
+    - Início: '../'
+    - Novidades:
+        - Compras: ./docs/Novidades/compras.md
+        - Estoque: ./docs/Novidades/estoque.md
+        - Pagar: ./docs/Novidades/pagar.md
+    - Versões:
+        - 1.41:
+            - Compras: ./Versões/1.41/compras.md
+            - Vendas: ./Versões/1.41/vendas.md
+        - 1.42:
+            - Compras: ./Versões/1.42/compras.md
+            - Vendas: ./Versões/1.42/vendas.md
+        - 1.43:
+            - Compras: ./Versões/1.43/compras.md
+            - Vendas: ./Versões/1.43/vendas.md
+    
+    - Manual operacional: http://google.com.br
 theme:
     name: readthedocs
     
-markdown_extensions:
-    - toc:
-        permalink: "#"
-        baselevel: 2
-        separator: "_"
+plugins:
+    - search:
+        separator: '[\s\-\.]+'
+        lang: 'pt'

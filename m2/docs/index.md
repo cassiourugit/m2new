@@ -1,11 +1,11 @@
 
-![](2.0/Img/evolucao-lancamento.gif)
+![](./Versões/2.0/Img/evolucao-lancamento.gif)
 
 # Portal de novidades do sistema Useall M2
 
 Neste portal você terá acesso as novidades da versão com a descrição dos novos recursos, correções e melhorias nos processos do sistema. 
 
-## Versões lançadas
+# Versões lançadas
 |Versões  |Data de lançamento| 
 |--------|------------------|
 |[Março](~/2.0/versao_2021/mes03_21.md)                        |   01/03/2021|
@@ -13,14 +13,14 @@ Neste portal você terá acesso as novidades da versão com a descrição dos no
 |[Mais versões >> ](~/2.0/historico_versoes.md)                | -----   | 
 
 
-## Novidades nas liberações de versões
+# Novidades nas liberações de versões
 
 **Possuímos liberações contínuas nas versões do sistema M2**
 
-[Clique aqui](~/2.0/Futuras_novidades/novas_evolucoes.md) para conferir o que preparamos para agilizar a solução das solicitações de alterações do sistema.
+[Clique aqui](./Versões/1.43/compras.md) para conferir o que preparamos para agilizar a solução das solicitações de alterações do sistema.
 
 
-## Novos recursos
+# Novos recursos
 
 **Você sabia que investimos em processos inteligentes para auxiliar a sua usabilidade no sistema?**
 
@@ -31,7 +31,6 @@ Contamos com a possibilidade de personalização de relatórios. Este recurso pe
 
 <br><br>
 
-<div font="5" align= "justify">
 
 <i>O conteúdo deste documento é disponibilizado pela empresa Useall Software, no intuito exclusivo de consulta para aprendizagem de utilização do sistema M2. É expressamente proibida a sua reprodução, aluguel ou a comercialização, sob pena de multa prevista contra os direitos autorais. Todos os títulos e direitos autorais relativos aos manuais dos sistemas Useall, incluindo todo o conteúdo e imagens, são de propriedade da Useall Software.</i>
 
@@ -42,6 +41,6 @@ Contamos com a possibilidade de personalização de relatórios. Este recurso pe
 
 Confira as evoluções que estamos trabalhando.
 
-Para saber mais clique [aqui](~/2.0/Futuras_novidades/novas_evolucoes.md).
+Para saber mais clique [aqui](/2.0/Futuras_novidades/novas_evolucoes.md).
 
 ![](2.0/Img/evolucao-lancamento.gif) -->

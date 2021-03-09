@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+  <title>2.7.0 303 - M2</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../../../../css/theme.css" />
+  <link rel="stylesheet" href="../../../../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "2.7.0 303";
+    var mkdocs_page_input_path = "Vers\u00f5es\\2.0\\Vers\u00f5es\\versao_2.7\\2.7.0-303.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../../../../.." class="icon icon-home"> M2</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="" href="../../../../../.././">Início</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Novidades</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="" href="../../../../../docs/Novidades/compras.md">Compras</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../../../../docs/Novidades/estoque.md">Estoque</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../../../../docs/Novidades/pagar.md">Pagar</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Versões</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="#">1.41</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../1.41/compras/">Compras</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../1.41/vendas/">Vendas</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">1.42</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../1.42/compras/">Compras</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../1.42/vendas/">Vendas</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">1.43</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../1.43/compras/">Compras</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../1.43/vendas/">Vendas</a>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="" href="http://google.com.br">Manual operacional</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../../..">M2</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>2.7.0 303</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <div align= "justify">
+
+# Novidades da versão 2.7.0
+
+A versão está prevista para liberação em Novembro de 2020, com algumas alterações e correções.
+
+* [Gestão do ciclo de cadastro do cliente](#gestao-do-ciclo-de-cadastro-do-cliente)
+* [Gestão do ciclo de cadastro do item](#gestao-do-ciclo-de-cadastro-do-item)
+* [Gestão do preço de venda](#gestao-do-preco-de-venda)
+* [Consulta de estoque](#consulta-de-estoque)
+* [Fila de reserva](#fila-de-reserva)
+* [Ficha cadastral do cliente](#ficha-cadastral-do-cliente)
+* [Antecipação de clientes](#antecipacao-de-clientes)
+* [Dias de vencimento na venda](#dias-de-vencimento-na-venda)
+
+
+## **Novas funcionalidades**
+
+### **Gestão do ciclo de cadastro do cliente** 
+
+O cliente para ser cadastrado no sistema e ser liberado para o comercial e/ou portal de venda, deve seguir um processo de cadastro e validações. Esse processo inicia no cadastramento básico do cliente e passa pelas áreas interessadas para inserir as informações pertinentes de cada área. Por exemplo: contas contábeis e dados fiscais para emissão da NF.
+
+**Funcionalidades:**
+
+**Alterações no sistema:**
+
+1 - Foi separado os dados fiscais dos dados de identificação: removido os campos "Ins. Estadual, Ins. Municipal, Ins. SUFRAMA, CNAE, RNTC, Espécie TAC, Destino, Doc. estrangeiro e Tipo de Cliente/Fornecedor para a aba "Fiscal" do cadastro de Clientes.
+
+2 - Alterado a exibição do campo "Insc. estadual" para o campo "Contribuinte", com as seguintes opções:
+
+**Não contribuinte:** considera não contribuinte de ICMS, o campo "Insc. estadual" fica habilitado para edição e pode ficar vazio.
+
+**Contribuinte isento de IE:** considera contribuinte de ICMS, o Campo "Insc. estadual"  fica desabilitado e com a constante ISENTO.
+
+**Contribuinte com IE:** considera contribuinte de ICMS, o campo "Insc. estadual" fica habilitado para edição e pode ficar vazio.
+
+3 - Validação do Destino:
+
+**Nacional:** permite qualquer UF e permite preencher o campo CPF/CNPJ.
+
+**Exportação Indireta:** permite qualquer UF e permite preencher o campo CPF/CNPJ.
+
+**Exportação Direta:** permite apenas UF "EX" e valida o campo CPF/CNPJ.
+
+4 - Tipo de Cliente/Fornecedor:
+
+A partir de agora o sistema passa a estimular o uso desse cadastro como um cadastro fiscal para agrupar clientes comuns e facilitar a configuração fiscal desses clientes comuns. Passaremos a estimular o uso do "Segmento" do cliente em substituição ao tipo de cliente/fornecedor.
+
+5 - Etapas do cadastro:
+
+Adicionado as seguintes etapas no cadastro do Cliente / Fornecedor: "Comercial", "Financeiro" e "Contábil e fiscal".
+
+O objetivo é realizar o cadastro do cliente por etapas, cada etapa finalizada pode-se concluir o cadastro ou desfazer a conclusão. Todas as movimentações são gravadas no "Histórico de alterações", acessado pelo menu "Mais opções". Esses campos estão disponíveis para serem personalizados na tela de consulta de clientes.
+
+![Tela de consulta de clientes](../Img/Versao_2.7.0/clientes_Cadastro.png)
+
+Ao emitir um pedido de venda, é possível validar a conclusão do cadastro do cliente nas etapas: "Comercial", "Financeiro" e "Contábil e fiscal".
+- Para habilitar a validação da conclusão cadastral "Comercial": Início > Parametrização > Vendas > Análise comercial > Margem de contribuição ou Margem bruta.
+- Para habilitar a validação da conclusão cadastral "Financeiro" e "Contábil e fiscal": Início > Parametrização > Vendas > Analisar crédito no pedido de venda > Controlar conclusão cadastral.
+
+> Para não utilizar o processo de gestão de etapas no cadastro de clientes é possível salvar os novos cadastros como concluído = SIM, através do parâmetro: Início > Parametrização > Comum > Salvar novos clientes/fornecedores com conclusão cadastral concluída = "Sim" ou "Não".
+
+>**SIM:** considera o cadastro do cliente como liberado, isto é, trás os campos Comercial, Financeiro e Contábil e Fiscal para "SIM".
+
+>**NÃO:** cliente novo não liberado, é necessário liberar o cadastro nas etapas Comercial, Financeiro e Contábil e Fiscal.
+
+6 - Atualização cadastral:
+
+Adicionado dois campos "Atualização cadastral" e "Próxima atualização cadastral" disponivel em Cadastro de Clientes / Fornecedores > Mais opções > Geral > Atualização cadastral.
+
+**Atualização cadastral:** é um campo informativo com a data da atualização cadastral.
+
+**Próxima atualização cadastral:** é um campo informativo com a data da próxima atualização cadastral. Quando o cadastro atingir essa data, a coluna "Financeiro concluido" passará para "Não". Esta validação é realizada conforme parâmetro disponível em Inicio > Parametrização > Comum > Motor de verificação para atualização cadastral.
+
+7 - Análise de crédito no pedido de venda:
+
+Adicionado novas validações na análise de crédito no pedido de venda: 
+- Controlar conclusão cadastral 
+- Análise de crédito por Grupo empresarial
+
+**Controlar conclusão cadastral** 
+
+<u>Objetivo:</u> validar a conclusão do cadastro do cliente nas etapas: "Financeiro" e "Contábil e fiscal".
+
+Para habilitar o parâmetro: Início > Parametrização > Vendas > Analisar crédito no pedido de venda > Controlar conclusão cadastral.
+
+>Para validar a etapa de conclusão cadastral "Comercial" é necessário habilitar a **Análise comercial** através do menu: Início > Parametrização > Vendas > Análise comercial > "Margem de contribuição" ou "Margem bruta".
+
+**Análise de crédito por Grupo empresarial**
+
+<u>Objetivo:</u> a análise considera o limite de crédito do cliente do pedido e para comprometer o limite "Crédito utilizado" soma os registros de todos os clientes do mesmo grupo empresarial.
+
+Para habilitar o parâmetro: Início > Parametrização > Vendas > Analisar crédito no pedido de venda > Análise de crédito por: Grupo empresarial
+
+Na tela de "Detalhes do pedido de venda" contém o campo "Tipo de análise" indicando a forma de análise de crédito.
+
+
+### **Gestão do ciclo de cadastro do item** 
+
+O cadastro do item é um processo que pode ser feito por vários setores diferentes. Por exemplo, o setor de engenharia da empresa poderá cadastrar um novo produto informando apenas os dados de produção. Em seguida, o setor comercial poderá informar os dados para venda do item. Finalmente, o setor de compras poderá informar o fornecedor padrão, a unidade de compra e outros dados. Com isso alteramos o processo de cadastro do item sendo possível cadastrá-lo em etapas.
+
+**Funcionalidades:**
+
+**Alterações do cadastro do item:**
+
+* Alterada a exibição do cadastro, que passa a ser realizado por abas independentes, sendo necessário salvar as informações de cada aba para prosseguir. Desta forma, a área fiscal poderá parametrizar este cadastro e, separadamente, a área comercial poderá determinar o preço, por exemplo.
+
+![Cadastro do item](../Img/Versao_2.7.0/cad_item.png)
+
+* Quando criado novo item, o status será demonstrado como "Bloqueado", após finalizar as alterações, o item poderá ser alterado para "Liberado". O cadastro com status "Bloqueado" não será visualizado nos processos do sistema, somente o cadastro descrito como "Liberado". 
+
+* Caso seja editado um cadastro existente, a alteração só poderá ser salva se o status do item estiver como "Bloqueado".
+
+* Foi disponibilizado o parâmetro "Regra para geração da identificação do item", localizado em "Início > Parametrização > Estoque", para quem optar pela utilização da geração de código padronizado. Ao marcar este parâmetro, um ícone (em formato de engrenagem) será demonstrado no cadastro do item, ao lado do campo "Identificação". Na edição do cadastro do item, este ícone será demonstrado dentro da edição da identificação.
+
+![Cadastro do item](../Img/Versao_2.7.0/cad_item2.png)
+
+* Se desmarcadas as opções "Compro este item" e/ ou "Vendo este item" e existirem pedidos já cadastrados, o sistema permitirá que esse pedido seja faturado.
+
+Acessos em: Vendas > Itens e serviços // Compras > Itens e serviços
+
+
+### **Gestão do preço de venda** 
+
+O novo recurso de tabelas de preço de venda, tem o objetivo de aprimorar a gestão dos preços de itens adicionando novos recursos que auxiliam na manutenção e implementação da gestão de preços.
+
+Acesso em: Vendas > Tabelas de preços de venda
+
+**Funcionalidades:**
+
+**Cadastro de tabelas de preço:**
+
+Para cadastrar uma nova tabela de preço de venda, acessar o módulo "Vendas" e selecionar a opção "Tabela de preço de venda" e clicar no botão "Novo".
+
+**Revisão de tabelas de preço:**
+
+O método de revisão de tabelas de preço serve como uma tabela de preço temporária, onde deve-se realizar as alterações necessárias, para posteriormente aprova-las e aplica-las definitivamente.  A revisão de tabelas será utilizada para alterações em itens existentes, adicionar novos itens a tabela de preço e inativa-los quando necessário. 
+Para iniciar a revisão de uma tabela de preço, basta acessar o cadastro de tabelas de preço e selecionar a opção "Revisar Tabela". 
+Todas as alterações realizadas na revisão da tabela serão aplicadas somente após a aprovação da revisão. Para aprovação de uma revisão iniciada, deve-se selecionar a opção "Aprovar", disponível na tela de revisão da tabela de preço.
+
+![Revisão de tabela de preço](../Img/Versao_2.7.0/revisao_tab_preço.png)
+
+**Recursos disponíveis na tela de revisão:**
+
+- **Novo:** adiciona um novo item individual a tabela de preço.
+
+- **Adicionar Itens:** permite inserir itens em lote na tabela de preço.
+
+- **Ativar/Inativar:** inativa ou ativa o item na tabela de preço.
+
+- **Arquivar:** descarta as alterações realizadas na revisão para o item selecionado.
+
+- **Calcular preços:** permite a atualização dos preços em lote através do processo de formação de preço.
+
+- **Exportar:** realiza a exportação dos itens da tabela de preço em formato ".XLS".
+
+- **Importar:** realiza a importação dos arquivo ".XLS" (importante a conservação do mesmo formato exportado).
+
+**Cálculo do preço de venda:**
+
+A calculadora de preços de venda está disponível dentro da tela de revisão de itens. Com esse recurso pode-se atualizar o preço do item a partir dos seguintes métodos de formação de preço: 
+
+* Margem de contribuição
+
+* Markup
+
+* Margem de lucro
+
+Para inserir os valores, as margens e despesas que irão compor a formação de preço do item, deve-se cadastrar uma "variável para formação de preço" (Módulo Vendas > Listas), e informa-la no cadastro da tabela de preço. 
+
+![Variáveis](../Img/Versao_2.7.0/variaveis.png)
+
+Além da formação individual do preço de venda do item, pode-se utilizar o recurso para formação de preços <u>em lote</u>, na tela de revisão da tabela, selecionar todos os itens utilizando as teclas de atalho do teclado "CTRL + A" e após clicar em "Mais opções > Calcular preços".
+
+O sistema iniciará o processo de formação de preço de venda para todos os itens selecionados, sendo assim necessário definir qual "variável" para formação de preço será aplicada na formação.
+
+**Atualização de preços através de arquivos ".XLS":**
+
+A nova gestão permite que os preços de venda dos itens sejam atualizados através de arquivos ".XLS" (planilhas *Microsoft Excel*). 
+
+Para utilizar será necessária uma tabela de preço de venda pré-cadastrado no sistema, ou seja, com itens inclusos. 
+
+Através da tela de revisão da tabela de preço, selecionar a opção "Exportar". Será exportado um arquivo no formato ".XLS", com todos os itens da tabela de preço de venda, permitindo assim que seja realizado as devidas manipulações de preços através do *Microsoft Excel*.
+
+As colunas passíveis de manipulação são: Preço, Controla preço min e max, Preço min, Preço max e Preço margem zero.
+
+**Tabela promocional:**
+
+Pode-se definir uma tabela de preço promocional vinculada a tabela de preço principal. A tabela de preço promocional será sugerida automaticamente nos processos de venda sempre que o item estiver incluso na tabela promocional e na principal.
+
+Para vincular uma tabela de preço promocional, deve ser informado o campo "Tabela promocional" no cadastro de tabelas de preço.
+
+>**Exemplo:** Você possuí a tabela de preço de venda denominada "Tabela Useall", e aplicará uma promoção de 5% de desconto para os itens AA1 e AA2. 
+Deve-se cadastrar uma nova tabela de preço, vou denomina-la de "Tabela promocional". Após definir os itens AA1 e AA2 para essa nova tabela, ela deve ser inclusa no campo "Tabela promocional" no cadastro da "Tabela Useall". Dessa forma, sempre que o item AA1 e AA2 for vendido, o sistema ira sugerir a aplicabilidade da "Tabela Promocional".
+
+![Tabela promocional](../Img/Versao_2.7.0/tab_promo.png)
+
+**Consultar preços:**
+
+A nova tela de consulta de preços tem o intuito de simplificar a visualização dos preços de itens. O recurso está disponível através do "Módulo Vendas > Mais opções > Consulta de preços.
+
+A consulta pode ser realizada através dos seguintes métodos:
+
+- **Todos:** lista todos os itens de venda, e informa para quais tabelas de preço estão definidos, junto com os seus respectivos preços.
+
+- **Filial:** lista a tabela de preço vinculada a filial.
+
+- **Representante:** lista as tabelas de preços vinculadas ao representante.
+
+- **Região:** lista as tabelas de preços vinculadas a região.
+
+- **Cliente:** lista a tabela de preços definida no cadastro do cliente.
+
+![Consulta de preço](../Img/Versao_2.7.0/cons_preço.png)
+
+Os itens destacados em "vermelho", são os itens que estão em promoção, ou seja, estão vinculados a uma tabela de preço promocional.Para verificar qual a tabela de preço promocional, basta clicar no preço do item informado, será exibido uma nova tela com informações gráficas e detalhes sobre o item.
+
+![Consulta de preço](../Img/Versao_2.7.0/cons_preço2.png)
+
+![Consulta de preço](../Img/Versao_2.7.0/cons_preço3.png)
+
+**Desconto unitário:**
+
+Foi inserida a parametrização para definição de descontos nos processos de venda. Os métodos de descontos permitidos são:
+* no valor total 
+* no valor unitário
+
+Está disponível em "Parametrização > Vendas > Tipo de desconto.
+
+Essa alteração abrange os processos de Proposta de venda, Pedidos e Emissão de notas fiscais.
+
+
+### **Consulta de estoque** 
+
+Disponibilizado o processo de Consulta de estoque, uma ferramenta para gestão das informações de estoque para vendedores/representantes.
+
+**Funcionalidades:**
+
+Imagine que seu cliente pediu um determinado produto, você abre o sistema e ele informa que tem o produto disponível em outra loja. Opcionalmente você pode informar que possui o produto e vai chegar em 10 dias. 
+Essa nova ferramenta fornecerá esse tipo de informação para os vendedores e representantes. Nessa tela, você poderá escolher um item e o sistema mostrará várias informações sobre ele, tais como estoque, reservas, pedidos de compra, entre outros. 
+
+![Consulta de estoque](../Img/Versao_2.7.0/CONSULTA_ESTOQUE.png)
+
+<u>Aplicação:</u>
+
+1- Deve-se informar o item, a unidade e o(s) almoxarifado(s) e clicar no botão "Buscar". Nesse momento, o sistema carregará todos os demais campos da tela.
+
+>OBS: o campo Almoxarifado é multi-seleção, onde pode-se selecionar mais de um almoxarifado para a busca.
+
+2 - Demais informações da consulta:
+
+- **Estoque físico:** exibe a soma do estoque físico de todos os almoxarifados selecionados.
+- **Reservado:** exibe a soma da quantidade reservada em todos os almoxarifados selecionados.
+- **Disponível:** exibe o estoque físico menos o estoque reservado.
+- **Fila de reserva:** exibe a soma da quantidade do item na fila de todos os almoxarifados selecionados.
+- **Pedidos de compra:** exibe a soma da quantidade do item nos pedidos de compra em aberto. 
+- **Projetado:** exibe a quantidade disponível subtraído a fila de reserva somado aos pedidos de compra.
+- **Estoque mínimo:** busca o estoque mínimo dos almoxarifados selecionados. Se os almoxarifados possuírem “estoques mínimos” diferentes, o campo será zerado e desabilitado.
+- **Estoque máximo:** busca o estoque máximo dos almoxarifados selecionados. Se os almoxarifados possuírem “estoques máximos” diferentes, o campo será zerado e desabilitado.
+- **Quant. min. venda:** traz a informação do campo “Quantidade mínima” da aba “Venda” do cadastro do item.
+- **Quant. p/ emb. venda:** traz a informação do campo “Quantidade por embalagem” da unidade padrão de venda. Caso não tenha unidade padrão de venda informado, buscará da unidade de estoque.
+- **Quant. min. compra:** traz a informação do campo “Quantidade mínima” do fornecedor padrão do item. Se o item não possuir fornecedor padrão, o campo será zerado.
+- **Quant. p/ emb. compra:** traz a informação do campo “Quantidade por embalagem” do fornecedor padrão do item. Se o item não possuir fornecedor padrão, o campo será zerado.
+- **Quantidade pedida últimos 6 meses:** exibe a soma da quantidade dos pedidos do tipo venda com status "aberto" e parcial", dos últimos 6 meses.
+- **Data últ. pedido:** exibe a data do último pedido de venda, com status "aberto" ou "parcial". O “último” pedido é considerado o que possuir a maior data de emissão.
+- **Gráfico:** O gráfico exibe a quantidade vendida nos últimos seis meses. 
+
+**Campos em azul**
+
+Alguns campos estão na cor azul estilo *link*, quando clicar num desses campos, será mostrada a fonte da informação do mesmo:
+
+- **Reservado:** exibe uma tela com os dados das reservas do item. 
+- **Fila de reserva:**  exibe a tela de registros de reserva, mostrando apenas os registros que foram considerados no cálculo.
+- **Pedido de compra:** exibe a tela de registros de pedido de compra, mostrando os pedidos que foram considerados no cálculo.
+- **Data últ. pedido:** exibe a tela de registros de pedido filtrando apenas o pedido de onde buscamos a data.
+- **Gráfico:** ao clicar nas barras, exibe a tela de registros de pedido filtrando-a para mostrar apenas os pedidos que foram usados no cálculo da quantidade da barra. 
+
+Acesso em: Estoque > Consulta de estoque
+
+### **Fila de reserva** 
+
+Essa ferramenta reservará os itens comprados de forma automática. Sempre que um pedido ou requisição de materiais for lançado no sistema, ele reservará a quantidade disponível e o restante será colocado na fila de reservas. A posição de cada item na fila será definida por sua prioridade e ordem de chegada. Todo novo registro terá prioridade zero, sendo possível modificá-la manualmente.
+
+![Fila de reserva](../Img/Versao_2.7.0/fila.png)
+
+**Funcionalidades:**
+
+<u>Aplicação:</u>
+
+* A alimentação da fila se dará pelos processos que geram reserva de estoque: Pedido e Requisição.
+
+* Quando um pedido ou requisição for cancelado, os respectivos registros da fila serão removidos.
+
+* Se ocorrer uma alteração da quantidade de item do pedido, por exemplo, será adicionado um novo registro na fila com a nova quantidade e removido o registro anterior.
+
+* A posição de cada registro na fila será definida por sua prioridade, os registros com maior prioridade serão processados primeiro. Caso ocorra ter registros com a mesma prioridade, o que foi cadastrado primeiro será processado.
+
+* Foi disponibilizado no menu Mais opções a opção para "Alterar prioridade".
+
+![Alterar prioridade](../Img/Versao_2.7.0/prioridade.png)
+
+![Alterar prioridade](../Img/Versao_2.7.0/prioridade_tela.png)
+
+Toda alteração de prioridade ficará registrada, sendo possível acessar o histórico dessas alterações pela opção "Histórico de prioridade" no menu "Mais opções".
+
+![Histórico de prioridade](../Img/Versao_2.7.0/historico-1.png)
+
+![Histórico de prioridade](../Img/Versao_2.7.0/historico.png)
+
+> O uso da fila de reservas é ativado pelo parâmetro "Início > Parametrização > Estoque > Utilizar fila de reserva". Na tela exibirá as opções de "Utilizar" (Sim/Não), "Usuário para notificação" e "Quando" será executado, a opção "quando" vem fixa de "Hora em hora", sendo que a fila terá sua execução automática nesse período. Caso queira executar manualmente, deve-se utilizar a opção "Mais opções > Executar análise da fila".
+
+![Parâmetro Fila de reserva](../Img/Versao_2.7.0/fila_param.png)
+
+Acesso em: Estoque > Mais opções > Fila de reserva
+
+
+### **Ficha cadastral do cliente** 
+
+Disponibilizado espelho para demonstração das informações cadastrais do cliente.
+
+![Ficha cadastral](../Img/Versao_2.7.0/ficha_cadastral.png)
+
+Acesso em: Vendas > Clientes > Mais opções > Ficha cadastral do cliente
+
+
+### **Antecipação de clientes** 
+
+Disponibilizado processo de adiantamento no Pedido. 
+
+**Funcionalidades:**
+
+Nosso sistema possui a possibilidade de geração manual de adiantamento, porém foi modificado de modo que seja gerado automaticamente um adiantamento no processamento do pedido. Além da geração automática, o consumo do adiantamento foi automatizado, ou seja, ao faturar, será baixada as contas a receber usando o adiantamento.
+
+**Alterações:**
+
+1 - Adicionada configuração para informar qual o tipo de conta a receber que será usado para gerar adiantamentos no pedido e o  método de recebimento para baixa do adiantamento do pedido: Inicio > Parametrização > Vendas > Adiantamento nos pedidos.
+
+2 - Na aba "Financeiro" do cadastro do pedido, foi adicionado o campo "Valor do adiantamento", para ser informado quando ocorrer a antecipação do cliente.
+
+Acesso em: Vendas > Pedido
+
+### **Dias de vencimento na venda** 
+
+Disponibilizado processo de "Dias de vencimento na venda", para pagamentos em dias da semana ou dias do mês.
+
+**Funcionalidades:**
+
+Alguns clientes só aceitam pagar em dias fixos. Alguns pagam só em certos dias da semana, outros pagam só em uma ou duas datas no mês. Isso é comum quando o cliente é uma grande empresa. 
+
+**Aplicação:**
+
+Cadastro de Cliente > aba Financeiro: 
+
+![Dias de vencimento](../Img/Versao_2.7.0/tipo_vencimento.png)
+
+a) **Dias permitidos para vencimento:** disponibilizado dois novos campos para permitir até dois dias do mês para vencimento.
+
+![Mês](../Img/Versao_2.7.0/mes.png)
+
+b) **Dias da semana para pagamento:** adicionado um campo para escolher os dias da semana válidos para pagamento.
+
+![Semana](../Img/Versao_2.7.0/semana.png)
+
+**Alterações:**
+
+Foram ajustados os processos de proposta, pedido e faturamento para gerar as parcelas considerando os parâmetros de dias permitidos para vencimento.
+
+Acesso em: Vendas > Clientes > aba Financeiro
+
+
+## **Outras Alterações**
+
+**<u>Espelhos e Relatórios**</u> 
+
+Alterações aplicadas:
+
+**Recibo de baixa de contas a pagar**: alterado para demonstrar a mensagem de observação da baixa do título.
+
+Acesso em : Pagar > Baixas de contas a pagar > Mais opções > Visualizar recibo
+
+**Espelho do Retorno bancário**: correção no totalizador "por dia", para trazer a soma total paga no dia corrente.
+
+Acesso em: Receber > Retornos bancários > Mais opções > Imprimir
+
+**Relatórios de contas a pagar e receber**: Alterado o filtro "CAR" para permitir filtrar por múltiplos CAR.
+
+Acessos em: 
+
+Receber > Relatórios > Contas a receber por CAR 
+
+Receber > Relatórios > Recebimentos por CAR 
+
+Pagar > Relatórios > Contas a pagar por CAR 
+
+Pagar > Relatórios > Pagamentos por CAR
+
+
+**Relatório de Itens de pedidos em aberto**: correção na emissão quando marcada a opção "Incluir pedidos com avaliação bloqueada", o sistema não estava listando os devidos pedidos.
+
+Acesso em: Vendas > Relatórios > Itens de pedidos em aberto 
+
+**Espelho da proposta de venda**: adicionado no canto superior direito, o campo "Número cotação do cliente (Nº cot. cliente).
+
+Acesso em: Vendas > Proposta de vendas > "Mais opções > Proposta
+
+**Espelho de pedido de venda**: ajustado para exibir o código do cliente corretamente.
+
+Acesso em: Vendas > Pedidos > Mais opções > Pedido
+
+**Extrato de conciliação por extrato**: correção no relatório, para exibir os dados.
+
+Acesso em: Tesouraria > Relatórios > Extrato de conciliação por extrato
+
+**Relatórios contábeis**: foram alterados todos os relatórios do módulo de Contabilidade, para permitir emitir centro de custos, CAR ou contas contábeis inativas e ativas.
+
+Acesso em: Contábil > Relatórios / Contábil > Mais opções
+
+**Relatório de Conferência por regime de caixa**: alterado relatório para permitir a emissão das contas contábeis inativas. 
+
+Acesso: Contábil > Mais opções > Conferência por Regime de Caixa
+
+**Espelho pedido de compra**: efetuado ajuste, estava exibindo o endereço de entrega diferente do informado no pedido.
+
+Acesso em: Compras > Pedido de compras > Mais opções > Espelho
+
+**Espelho do romaneio sem itens**: corrigido para que cada nota seja exibida em uma única linha.
+
+Acesso em: Vendas > Emissão de notas fiscais > Aba Notas fiscais > Botão Imprimir romaneio.
+
+**Relatórios de metas**: disponibilizado os relatórios de meta conforme a versão M2 1.43.
+
+Acessos em:
+
+Vendas > Relatórios > Comparativo meta X Realizado
+
+Vendas > Relatórios > Clientes sem faturamento
+
+Vendas > Relatórios > Devolução de vendas - Modelos: Padrão, Por cliente e Por vendedor
+
+**Relatórios de orçamento**: efetuado os seguintes ajustes nos relatórios:
+
+**Orçamento empresarial consolidado - orçado x realizado**
+
+Aplicado correção nos dados da coluna "Saldo" apresentando a diferença entre as colunas "Orçado" x "Comprometido".
+
+Acesso em: Contábil > Relatórios > Orçamento empresarial consolidado - orçado x realizado
+
+**Analítico de apropriações**
+
+Adicionado o total de entradas e total de saídas nas linhas de total do grupo e total geral do relatório Analítico de apropriações.
+
+Acesso em: Contábil > Relatórios > Analítico de apropriações
+
+**Contas não orçadas**
+
+Adicionado no relatório de Contas não orçadas o total de entradas e o total de saídas.
+
+Acesso em: Contábil > Relatórios > Contas não orçadas
+
+**<u>Faturamento**</u> 
+
+Alterações aplicadas:
+
+**FCI**:
+
+Correção da demonstração de alíquota do ICMS vinculado ao cadastro FCI no item da nota fiscal de saída, ao faturar a NF.
+
+Acesso em: Vendas > Emissão de notas fiscais > aba "Notas fiscais" > edição da NF > aba "Itens".
+
+**Notas de saída de devolução e retorno**: 
+
+Efetuado ajustes: separado os processos de notas de retorno e devolução. Cada nota tem uma finalidade e cada finalidade tem CFOPs específicos conforme o manual da NF-e v.6.00, anexo III.
+
+![Nota de saída](../Img/Versao_2.7.0/dev_ret.png)
+
+Acesso em: Vendas > Emissão de notas fiscais > Novo - Devolução / Retorno
+
+**Cancelar pedido**:
+
+Corrigido processo de validação ao cancelar pedido de venda já adicionado ao faturamento "Vendas > Emissão de notas fiscais > Aba Seleção". Caso o pedido seja cancelado, o faturamento existente também é cancelado.
+
+Acesso em: Vendas > Emissão de notas fiscais
+
+**<u>Proposta de venda**</u> 
+
+Aplicado as seguintes alterações:
+
+1 - Corrigido processo, ao efetuar alteração da forma de pagamento na aba Financeiro, o sistema exibia mensagem de erro não permitindo efetuar o processo.
+
+2 - Ajustado processo para que ao gerar uma proposta, o sistema forneça os dados do almoxarifado que está configurado na aba "Adm" do "Tipo de saída". 
+
+Acesso em: Vendas > Proposta de vendas
+
+**<u>CST por filial**</u>
+
+Disponibilizado a opção que permite definir a CST de origem do item por filial. Para que o campo seja habilitado, é necessário que seja informado um CST padrão para o item, posteriormente selecionar a opção "Definir CST por filial".
+
+>Caso o item possua apenas uma CST para todas as filiais, basta informa a CST padrão, na aba "Fiscal" do cadastro do item.
+
+>O CST definido para as filiais pode ser modificado ao gerar registros de FCI do item.
+
+>Para novas filiais cadastradas será assumido o CST padrão definido na aba "Fisca" do item.
+
+![CST por filial](../Img/Versao_2.7.0/cst_item.png)
+
+Acesso em: Vendas > Itens e serviços
+
+**<u>Finalidade na venda**</u>
+
+Foi inserido o campo "Finalidade", com as opções "Revenda", "Consumo" e "Industrialização", nos processos de "Propostas de venda", "Pedidos, "Emissão de notas fiscais de saída" do módulo "Vendas". 
+
+Ao informar o item em um destes processos, o campo "Finalidade" demonstrará uma das opções. A tributação da opção escolhida será demonstrada conforme tipo de saída configurado e vinculado ao tipo de saída padrão. 
+
+Essa configuração deve ser realizada em "Vendas > Listas > Tipos de saída padrões", vinculando o tipo de saída conforme o estado descrito no cadastro do cliente.
+
+Acessos em: Vendas > Propostas de venda // Pedidos // Emissão de notas fiscais de saída
+
+**<u>Renegociação**</u> 
+
+Efetuado correção no processo, onde era exibido mensagem de alerta informando que não foi possível renegociar os títulos havendo lançamento de renegociação em duplicidade. 
+
+Acesso em: Receber > Mais opções > Renegociar
+
+**<u>Baixa de contas a receber**</u> 
+
+Efetuado correção no processo, onde ao baixar um título na mesma data de emissão, exibia  mensagem não permitindo a devida baixa. 
+
+Acesso em: Receber > Contas a receber > Mais opções > Baixar
+
+**<u>Notas fiscais de serviço**</u> 
+
+Corrigido processo, onde não estava gerando o título de contas a pagar de INSS, quando o cliente/fornecedor estava marcado para reter somente o INSS. 
+
+Acesso em: Compras > Notas fiscais de entrada > Novo > Notas fiscais de serviço
+
+**<u>Importar XML da NF-e**</u> 
+
+Corrigido processo, o filtro de Item, aba Itens da tela de importação, não estava efetuando a busca conforme o solicitado.
+
+Acesso em: Compras > Importar XML da NF-e
+
+**<u>Conhecimento de transporte**</u> 
+
+Efetuado correção no processo manual e via XML, onde não estava respeitando a opção "Lançar contas a pagar" do tipo de entrada, não permitindo efetuar o processamento.
+
+Acesso em: Compras > Conhecimento de transportes
+
+**<u>Painel de compras**</u> 
+
+Correções aplicadas:
+
+1 - O sistema não estava respeitando os dados definidos pela negociação, descartando-os ao redigitar o tipo de entrada.
+
+2 - No processo de "Avaliar cotações", ao finalziar, o sistema estava emitindo mensagem de erro, impedindo o andamento do processo.
+
+3 - Função "Processar" pedido de compra não estava funcionando.
+
+Accesso em: Compras > Painel de compras
+
+**<u>Montagem de KIT**</u> 
+
+Efetuado correção no processo de movimentação de estoque na Montagem de Kit, onde ao processar a Montagem, ocorria mensagem informando o estoque negativo de componentes, mas permitia o processamento. A correção aplicada, aborta o processamento, deixando a montagem com status cancelado, até que seja efetuado o ajuste do saldo.
+
+Acesso em: Estoque > Mais opções > Montagens/Desmontagens de Kit
+
+**<u>Cadastro de tamanhos**</u> 
+
+Adicionado opção "Definir ordenação" ao botão "Mais opções" na tela de cadastro de tamanhos.
+
+Acesso em: Estoque > Listas > Tamanhos
+
+**<u>Exceção fiscal do ICMS**</u> 
+
+Disponibilizado no cadastro de Exceção fiscal do ICMS, a opção para informar várias UFs.
+
+Alterações:
+
+- Removido o campo UF na aba "Critérios para exceção" e adicionado a aba "UFs" (ao lado da aba Filiais) onde pode-se adicionar várias UFs.
+
+Acesso em: Contábil > Exceção fiscal do ICMS
+
+**<u>Conta corrente**</u> 
+
+Disponibilizado a restrição de conta corrente por usuário, visando a segurança e a privacidade, evitando que usuários não autorizados vejam o saldo e movimento da conta.
+
+O cadastro de conta corrente tem vários tipos de contas, por exemplo: as contas bancárias, usadas para receber clientes e pagar fornecedores, a conta caixa para despesas diárias da empresa e alguns recebimentos, as contas de investimento para controlar as aplicações, a conta das lojas, entre outras.
+Cada uma dessas contas interessa a um grupo de usuários específico, por isso é necessário impedir que os usuários não autorizados consultem essas conta.
+
+**Alterações:**
+
+1 - Adicionado cadastro de "Restrição de contas", com o objetivo de criar uma lista de usuários para indicar quais usuários podem ter acesso a essa conta.
+
+**Restrições da permissão:**
+
+- Conta corrente sem permissão não é visualizada nas operações de baixas de contas a receber e pagar, lançamentos de movimentos financeiros, transferências, operações sobre o boleto bancário, remessa e retorno bancário de contas a receber e pagar, cadastro e operações sobre o cheque recebido e conciliação bancária.
+
+- Visualizações de registros em telas e relatórios de baixas de contas a receber e pagar e movimento financeiro referente a conta corrente sem permissão.
+
+- Visualização da conta corrente sem permissão na tela de cadastro da conta e no assistente financeiro.
+
+![Restrição de contas](../Img/versao_2.7.0/restricao_contas.png)
+
+Acesso em: Tesouria > Mais opções > Restrição de contas
+
+</div>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../../../..';</script>
+    <script src="../../../../../js/theme.js" defer></script>
+      <script src="../../../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
