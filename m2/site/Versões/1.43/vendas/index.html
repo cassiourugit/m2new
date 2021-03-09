@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Vendas - M2</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../../css/theme.css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Vendas";
+    var mkdocs_page_input_path = "Vers\u00f5es\\1.43\\vendas.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> M2</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="" href="../../../.././">Início</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Novidades</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="" href="../../../docs/Novidades/compras.md">Compras</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../../docs/Novidades/estoque.md">Estoque</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../../docs/Novidades/pagar.md">Pagar</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Versões</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="#">1.41</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../1.41/compras/">Compras</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../1.41/vendas/">Vendas</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">1.42</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../1.42/compras/">Compras</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../1.42/vendas/">Vendas</a>
+                </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="#">1.43</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../compras/">Compras</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Vendas</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#14384">1.43.84</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#manutencao">Manutenção</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#14383">1.43.83</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#manutencao_1">Manutenção</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#14382">1.43.82</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#manutencao_2">Manutenção</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#14381">1.43.81</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#manutencao_3">Manutenção</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#14379">1.43.79</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#manutencao_4">Manutenção</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#14375">1.43.75</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#manutencao_5">Manutenção</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#14370">1.43.70</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#manutencao_6">Manutenção</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#14365">1.43.65</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#manutencao_7">Manutenção</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#14363">1.43.63</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#manutencao_8">Manutenção</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#14362">1.43.62</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#manutencao_9">Manutenção</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#14361">1.43.61</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#manutencao_10">Manutenção</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#14360">1.43.60</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#manutencao_11">Manutenção</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#14358">1.43.58</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#manutencao_12">Manutenção</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#14356">1.43.56</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#manutencao_13">Manutenção</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#14331">1.43.31</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#novas-funcionalidades">Novas funcionalidades</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#14326">1.43.26</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#novas-funcionalidades_1">Novas funcionalidades</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#14321">1.43.21</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#manutencao_14">Manutenção</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#14315">1.43.15</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#novas-funcionalidades_2">Novas funcionalidades</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#manutencao_15">Manutenção</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#1430">1.43.0</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#novas-funcionalidades_3">Novas funcionalidades</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#manutencao_16">Manutenção</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="" href="http://google.com.br">Manual operacional</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">M2</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>1.43 &raquo;</li>
+        
+      
+        
+          <li>Versões &raquo;</li>
+        
+      
+    
+    <li>Vendas</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="vendas">Vendas</h1>
+<p>Novidades do módulo de Vendas</p>
+<h2 id="14384">1.43.84</h2>
+<h3 id="manutencao">Manutenção</h3>
+<p><strong>Nota fiscal de Devolução</strong></p>
+<p>Corrigido processo, o sistema não estava inserindo a forma de pagamento na Nota. Obs: A parametrização "Nota de crédito para devolução" deve estar devidamente configurada.</p>
+<p>Acesso em: Vendas &gt; Notas Fiscais de Saída &gt; (Novo) Nota fiscal de Devolução</p>
+<h2 id="14383">1.43.83</h2>
+<h3 id="manutencao_1">Manutenção</h3>
+<p><strong>Pedidos de venda</strong></p>
+<p>Efetuado correção ao reabrir um pedido no sistema Loja, para não duplicar a informação do campo Obs, ao replicar o pedido ao sistema M2.</p>
+<p>Acesso em: Vendas &gt; Pedidos de venda</p>
+<p><strong>Itens e serviços</strong></p>
+<p>Realizado correção na Formação de Preços na tela de "Itens e Serviços". Campo "Custo do Item" permite 4 casas após a vírgula.</p>
+<p>Acesso em: Vendas &gt; Itens e Serviços &gt; Mais opções &gt; Formação de preço</p>
+<p><strong>Relatório Saldo de estoque</strong></p>
+<p>Efetuado correção para coincidir os valores em relação aos períodos.</p>
+<p>Acesso em: Vendas &gt; Relatórios &gt; Saldo de estoque</p>
+<h2 id="14382">1.43.82</h2>
+<h3 id="manutencao_2">Manutenção</h3>
+<p><strong>Notas fiscais de saída</strong></p>
+<p>Efetuado ajuste no DF-e para que o mesmo sincronize as notas novamente, evitando duplicidade no Sefaz.</p>
+<p>Acesso em: Vendas &gt; Notas fiscais de saída</p>
+<p><strong>Proposta de venda</strong></p>
+<p>Removido validação de origem do sistema Loja para os processos de "Reabrir" e "Cancelar proposta", sendo permitido executar os comandos.</p>
+<p>Acesso em: Vendas &gt; Proposta de venda</p>
+<h2 id="14381">1.43.81</h2>
+<h3 id="manutencao_3">Manutenção</h3>
+<p><strong>Notas fiscais de saída</strong></p>
+<p>Alterado processo de Autorização de nota para enviar a IE de Substituição tributária no XML e DANFE da nota fiscal de saída.</p>
+<p>Acesso em: Vendas &gt; Notas fiscais de saída</p>
+<h2 id="14379">1.43.79</h2>
+<h3 id="manutencao_4">Manutenção</h3>
+<p><strong>Notas fiscais de saída</strong></p>
+<p>Efetuado correção no processo de alterar dados da nota, para respeitar a transportadora informada nesse processo.</p>
+<p>Acesso em: Vendas &gt; Notas fiscais de saída &gt; Mais opções &gt; Alterar &gt; Dados da nota</p>
+<p>Aplicado tratativa para autorizar notas quando a transportadora for do exterior (EX), não sendo solicitado CNPJ/CPF ou Doc. estrangeiro.</p>
+<p>Acesso em: Vendas &gt; Notas fiscais de saída</p>
+<p><strong>Pedidos de venda</strong></p>
+<p>Efetuado correção no Histórico de Pedidos, ao clicar no botão Itens alterados, ocorria mensagem de erro não permitindo a exibição da listagem.</p>
+<p>Acesso em: Vendas &gt; Pedidos de venda</p>
+<h2 id="14375">1.43.75</h2>
+<h3 id="manutencao_5">Manutenção</h3>
+<p><strong>Orçamentos</strong></p>
+<p>Efetuado correções no processo de Orçamento:
+1. Corrigido o campo data permitindo sua alteração na cópia de orçamento
+2. Corrigido processo ao informar Roteiro no Orçamento, onde ocorria msg de erro.</p>
+<p>Acesso em: Vendas &gt; Orçamentos</p>
+<h2 id="14370">1.43.70</h2>
+<h3 id="manutencao_6">Manutenção</h3>
+<p><strong>Tela de consulta de Clientes</strong></p>
+<p>Adicionado na tela de consulta do cadastro de clientes as opções:
+- Filtro: Grupo empresarial
+- Coluna: Grupo empresarial, com a descrição do grupo</p>
+<p>Acesso em: Vendas &gt; Clientes</p>
+<h2 id="14365">1.43.65</h2>
+<h3 id="manutencao_7">Manutenção</h3>
+<p><strong>Pedidos de venda</strong></p>
+<p>Efetuado alteração no lançamento de pedido originado no Portal do representante: no cadastro de cliente  tem a configuração de desconto condicional, quando o pedido for lançado pelo portal, o sistema irá aplicar esse desconto ao lançar o pedido no M2.</p>
+<p>Acesso em: Vendas &gt; Pedidos de venda</p>
+<h2 id="14363">1.43.63</h2>
+<h3 id="manutencao_8">Manutenção</h3>
+<p><strong>Orçamentos</strong></p>
+<p>Efetuado correção no processo de Cópia do Orçamento, para carregar a data atual para o registro copiado.</p>
+<p>Acesso em: Vendas &gt; Orçamentos &gt; Mais opções &gt; Copiar</p>
+<p><strong>Clientes</strong></p>
+<p>Alterado cadastro de Cliente, aba Comercial, campo segmento: ao inserir um novo segmento na tela de cadastro de cliente, ocorria erro não permitindo efetuar o processo.</p>
+<p>Acesso em: Vendas &gt; Clientes</p>
+<p><strong>Site de embarque</strong></p>
+<p>Efetuado correção no processo de embarque, onde não estava carregando a Unidade do item na Ordem de carregamento, site de carregamento (Embarque).</p>
+<p>Acesso em: Site de embarque &gt; Ordem de carregamento</p>
+<p><strong>Notas fiscais de saída</strong></p>
+<p>Disponibilizado no processo de Exportação do SPED fiscal a informação do Código do benefício fiscal, no registro C197.</p>
+<p>Acesso em: Vendas &gt; Notas fiscais de saída</p>
+<h2 id="14362">1.43.62</h2>
+<h3 id="manutencao_9">Manutenção</h3>
+<p><strong>Formação de preço</strong></p>
+<p>Efetuado correção no processo de Formação de preço, para permitir inserir despesas que somem mais de 100%, utilizando o método 'Margem de contribuição'.</p>
+<p>Acesso em: Vendas &gt; Formação de preço &gt; Novo</p>
+<p><strong>Notas fiscais de serviço</strong></p>
+<p>Efetuado alteração no processo de impressão da NFS-e, provedor Betha:
+1. No campo Código dos serviços: quando a nota conter mais de um serviço, imprime todos os códigos e descrição.
+2. Forma de pagamento: Quando a nota for a vista, imprimir o campo Tipo como "A vista" e os demais campos deixar em branco.
+3. Permitido gerar a impressão da nota com mais de 2000 caracteres, sendo enviado ao XML apenas a parte que couber. Disponibilizado parâmetro para essa alteração: Acesso em Parâmetro &gt; Fiscal &gt; NFS-e: "Permitir descrição do item da NFS-e maior que 2000 caracteres."</p>
+<p>Acesso em: Vendas &gt; Notas fiscais de serviço</p>
+<h2 id="14361">1.43.61</h2>
+<h3 id="manutencao_10">Manutenção</h3>
+<p><strong>Relatório PIS/COFINS a recolher</strong></p>
+<p>Alterado relatório de PIS/COFINS a recolher: para trazer a analise das devoluções para checagem de saldos de faturamento.</p>
+<p>Alteração:</p>
+<ol>
+<li>Criado o bloco de Devoluções no final do relatório que compõe todas as notas de devolução com ou sem PIS/COFINS para dedução do total do faturamento.</li>
+</ol>
+<p>Acesso em: Vendas &gt; Relatórios &gt; PIS/COFINS a recolher</p>
+<p><strong>Nota fiscais de serviço</strong></p>
+<p>Corrigido processo de retenção de INSS e ISS sobre o título, recalculando o contas a receber.</p>
+<p>Acesso em: Vendas &gt; Notas fiscais de serviço</p>
+<h2 id="14360">1.43.60</h2>
+<h3 id="manutencao_11">Manutenção</h3>
+<p><strong>Notas fiscais de saída</strong></p>
+<p>Corrigido recurso de rastrear documentos vinculados dos processos de notas de saída.</p>
+<p>Acesso em: Vendas &gt; Notas fiscais de saída &gt; Mais opções &gt; Rastrear &gt; Documentos vinculados</p>
+<h2 id="14358">1.43.58</h2>
+<h3 id="manutencao_12">Manutenção</h3>
+<p><strong>Embarque</strong></p>
+<p>Efetuado correção no processo de Carregamento, onde ao efetuar o carregamento ocorria aleatoriamente, duplicidade do peso total e quantidade de itens.
+Colocado validação para que quando ocorra uma entrada duplicada no carregamento, exiba a mensagem: "Quantidade do volume maior que a quantidade do item carregado." não efetuando a duplicidade.</p>
+<p>Acesso em: Sistema de Embarque &gt; Ordem de carregamento</p>
+<p><strong>Notas fiscais de saída</strong></p>
+<p>Corrigido processo de Alterar dados da nota: ao efetuar alteração da transportadora, o dado informado não estava sendo gravado.</p>
+<p>Acesso em: Vendas &gt; Notas fiscais de saída &gt; Mais opções&gt; Alterar&gt; Dados da nota</p>
+<p><strong>Orçamento</strong></p>
+<p>Efetuado tratativa para o processo de edição de dados, na guia Preço do Orçamento: quando clicar no botão Editar da aba Preços e efetuar alguma alteração, o processo deverá ser SALVO ou CANCELADO pelo usuário. Se o usuário tentar trocar de aba, o sistema dispara mensagem solicitando uma ação.</p>
+<p>Acesso em: Vendas &gt; Orçamento</p>
+<p><strong>Proposta de venda</strong></p>
+<p>Efetuado correção na Proposta de venda:
+- Disponibilizado o campo Identificação para digitar o dado, quando for selecionado a opção Item não cadastrado. 
+- Ajustado espelho da Proposta para mostrar a identificação do item, quando o mesmo for originado de um orçamento.</p>
+<p>Acesso em: Vendas &gt; Proposta de venda</p>
+<h2 id="14356">1.43.56</h2>
+<h3 id="manutencao_13">Manutenção</h3>
+<p><strong>Benefício fiscal</strong></p>
+<p>Adequado sistema para enviar a tag de Número do processo: quando a empresa tem benefício fiscal que permite considerar o desconto do ICMS para fins de base de cálculo do Pis e Cofins.</p>
+<p>Alteração: 
+- No cadastro de Empresa, aba Fiscal, disponibilizado uma grade permitindo cadastrar os números de processo. 
+- Na nota, disponibilizado esta mesma grade na opção de edição da nota (Mais opções &gt; Outros &gt; Dados fiscais).
+- Esta informação é gravada e enviada no XML (tag nProc), para nota fiscal de Saída quanto Entrada.</p>
+<p>Acesso em: Vendas &gt; Nota fiscal de saída</p>
+<p><strong>Nota fiscal de devolução</strong></p>
+<p>Efetuado correção no valor das parcelas de nota de devolução, onde estava duplicando o valor das faturas.</p>
+<p>Acesso em: Vendas &gt; Novo &gt; Nota fiscal de devolução</p>
+<h2 id="14331">1.43.31</h2>
+<h3 id="novas-funcionalidades">Novas funcionalidades</h3>
+<p><strong>Nova modalidade de cálculo do DIFAL</strong></p>
+<p>Disponibilizado no processo de  nota fiscal de saída a modalidade de cálculo do DIFAL para o estado do PR.</p>
+<p>Alterações:
+1. Na Exceção fiscal do ICMS &gt; aba Alterações no ICMS: adicionado o campo 'Modalidade de cálculo do DIFAL' com as opções Normal e Calcular ICMS por dentro
+2. Adicionado o ícone 'i' com a explicação dos cálculos
+3. Adicionado o campo '% do ICMS interno sobrescrito: Esse campo serve para calcular alíquota interna para os itens que são considerados supérfluos onde o estado do PR aumentou a alíquota.</p>
+<h2 id="14326">1.43.26</h2>
+<h3 id="novas-funcionalidades_1">Novas funcionalidades</h3>
+<p><strong>Família de produto</strong></p>
+<p>Disponibilizado processo de Família de produtos. Esse processo serve como modelo para vários produtos diferentes. No cadastro de uma família, define-se as várias características que ela possui. Pode-se informar restrições, ou seja, quais opções de características são compatíveis entre si e por fim, pode-se informar quais componentes o produto deve conter de acordo com cada característica. Uma vez configurada, pode-se cadastrar um pedido com base na família.</p>
+<p>Acesso em Vendas &gt; Mais opções &gt; Família de produtos</p>
+<h2 id="14321">1.43.21</h2>
+<h3 id="manutencao_14">Manutenção</h3>
+<p><strong>Ajustes no cálculo do preço na Formação de preço</strong></p>
+<p>Aprimorado o processo de cálculo do preço na formação de preços onde as despesas fixas são incorporadas ao custo.</p>
+<p>Alterações:
+1. Alteração na Parametrização &gt; Vendas &gt; Forma de cálculo para formação de preços
+- Alterada a opção 'Margem' para 'Margem de contribuição'
+- Adicionada a opção 'Margem de lucro'
+- Adicionado o ícone 'i' para exibir a explicação de cada fórmula.</p>
+<p>Acesso em: Vendas &gt; Formação de preço</p>
+<h2 id="14315">1.43.15</h2>
+<h3 id="novas-funcionalidades_2">Novas funcionalidades</h3>
+<p><strong>Reenviar e-mail da NF-e e NFS-e</strong></p>
+<p>Disponibilizado opção de reenvio de e-mai da Nota fiscal de saída e Nota fiscal de serviço.
+Na tela de consulta da NF-e e NFS-e botão Mais opções,  foi adicionada a opção 'Distribuir NF', para reenvio do e-mail.</p>
+<p>Acessos em: </p>
+<p>Vendas &gt; Notas fiscais de saída &gt; Mais opções &gt; Outros &gt; Distribuir NF</p>
+<p>Vendas&gt; Notas fiscais de serviço &gt; Mais opções &gt; Outros &gt; Distribuir NF</p>
+<p><strong>Impressão de etiquetas para mala direta</strong></p>
+<p>Disponibilizado Relatório de mala direta para impressão de etiquetas. O Relatório mostra as informações básicas de Clientes e Fornecedores.</p>
+<p>Acesso em: Vendas &gt; Relatórios &gt; Etiquetas para mala direta</p>
+<p><strong>Impressão de etiqueta folha de rosto</strong></p>
+<p>Disponibilizado processo de impressão de etiqueta de folha de rosto, em impressora a laser.</p>
+<p>Acesso em: Vendas &gt; Notas fiscais de saída &gt; Mais opções &gt; Etiqueta - folha de rosto</p>
+<p><strong>Faturamento de Kit com detalhamento dos componentes na NF</strong></p>
+<p>Aprimorado o processo de faturamento, para faturar Kit com detalhamento dos componentes na NF.</p>
+<p>Alterações:
+1. Adicionado na Parametrização &gt; Comum a opção 'Detalhar os itens do Kit na NF'
+2. Ao gerar o faturamento:
+    - Quando o sistema estiver configurado para explodir os itens do Kit, será exibido os componentes do kit com seus devidos lotes.
+    - Será exibido nas observações um texto resumindo os kits.
+    - A baixa de estoque será do produto Kit.</p>
+<p>Acessos em:</p>
+<p>Vendas &gt; Pedidos de venda &gt; Mais opções &gt; Emitir nota</p>
+<p>Vendas &gt; Pedidos de venda &gt; Embarque </p>
+<p><strong>Notas fiscais de saída</strong></p>
+<p>Disponibilizado novas validações na Nota fiscal de saída, conforme Nota técnica 2019.00, as empresas que tenham benefício fiscal serão impactadas.</p>
+<p>Alterações:</p>
+<p>Adicionado o campo 'Código do benefício fiscal' no cadastro de Tipo de saída, aba ICMS e no cadastro de Exceção fiscal do ICMS, aba Alterações no ICMS.</p>
+<p>Adicionado o campo 'cBenef' no XML de distribuição da nota.</p>
+<p>Aprimorado processo da Nota fiscal de saída, onde o calculo da quantidade tributável estava divergente do peso líquido dos itens no XML da nota.</p>
+<p>Alteração:
+1. Criado parâmetro para especificar a forma de cálculo da unidade tributável da nota:
+- Fator de conversão - forma que o sistema já efetua, essa opção vem como padrão
+- Peso Líquido - nova forma, deve ser selecionada, quando o sistema for atuar pelo peso.
+ Parametrização &gt; Vendas &gt;  Forma de cálculo da unidade tributável</p>
+<p>Acesso em: Vendas &gt; Notas fiscais de saída</p>
+<h3 id="manutencao_15">Manutenção</h3>
+<p><strong>Outras informações na NFS-e</strong></p>
+<p>Disponibilizado  campo "Outras Informações" no XML quando for utilizado o porte da empresa ME ou MEI pra emissão da Nota.</p>
+<p>Alteração: 
+1. Adicionado os campos abaixo, na parametrização da NFS-e (Inicio &gt; Parametrização &gt; Fiscal &gt; NFS-e), quando selecionado o provedor Betha V1:
+    - Recolhimento do ISS
+    - Enviar porte e recolhimento do ISS nas outras informações da NFS-e</p>
+<p>Acesso em: Vendas &gt; Notas fiscais de serviço</p>
+<p><strong>Cadastro de clientes e fornecedores</strong></p>
+<p>Aprimorado a busca pelo CNPJ ou CPF no cadastro de Clientes e Fornecedores permitindo digitar os pontos entre os números.</p>
+<p>Aprimorado cadastro de clientes, para registrar o ID do usuário que efetuou o cadastro, assim como a data e hora do cadastro. Na tela de consulta do Cadastro de clientes, deve-se personalizar a coluna Cód. usuário de casdastro. </p>
+<p>Adicionado campo 'Dias para protesto' no cadasto de clientes. Ao gerar boleto e remessa bancária, será pesquisado a informação no cadastro de cliente, caso não exista informação, busca da instrução na configuração bancária.</p>
+<p>Acesso em: Vendas &gt; Clientes</p>
+<p><strong>Tipo de saída</strong></p>
+<p>Adicionado o ícone "?" ao lado do campo CFOP fora do estado,  contendo nota informativa referente ao CFOP Fora do Estado.</p>
+<p>Nota informativa:</p>
+<p>"O M2 encontra o CFOP fora do estado automaticamente. Por exemplo: O M2 altera CFOP padrão 5101 para 6101 sem que você digite o campo CFOP fora do estado.
+Informe o CFOP fora do estado somente quando o código da operação fora do estado for diferente do interno, por exemplo: dentro do estado é 5405 e fora do estado é 6402".</p>
+<p>Acesso em: Vendas &gt; Listas &gt; Tipo de saída</p>
+<p><strong>Retirar pedido do Planejamento de embarque</strong></p>
+<p>Adicionado bt. Mais opções, na aba Demanda, da tela de Planejamento de embarque, permitindo remover pedidos por completo, informando o número do mesmo.</p>
+<p>Acesso em: Vendas &gt; Embarque &gt; Planejamento de embarque</p>
+<p><strong>Relatório ABC</strong></p>
+<p>Análise ABC - Modelo: Análise ABC por item </p>
+<p>O relatório tem por função realizar um ranqueamento dos itens dentro de cada cliente. O relatório irá mostrar os clientes em uma ordem de faturamento (Do que obteve um faturamento maior para os menores) e irá mostrar também  os itens faturados dentro de cada cliente.</p>
+<p>Análise ABC por Item - Modelo: Análise ABC por cliente</p>
+<p>O relatório tem por função realizar um ranqueamento do cliente dentro de cada item. O relatório mostra os itens na ordem de maior faturamento para o menor e dentro desses itens os clientes que mais o compraram aparecem.</p>
+<p>Acesso em: </p>
+<p>Vendas &gt; Relatórios &gt; Análise ABC - Modelo: Análise ABC por item </p>
+<p>Vendas &gt; Relatórios &gt; Análise ABC por Item - Modelo: Análise ABC por cliente</p>
+<p><strong>Relatório de Itens de notas fiscais de saída</strong></p>
+<p>Aprimorado "Relatório de Itens de notas fiscais de saída" permitindo seleção múltipla no filtro "Tipo de Saída".</p>
+<p>Acesso em: Vendas &gt; Relatórios &gt; Relatório de Itens de notas fiscais de saída</p>
+<p><strong>Alterar reservas do estoque do pedido</strong></p>
+<p>Aprimorado tela de reserva de estoque com o objetivo de deixar a mesma mais clara para consulta:  alterado a coluna 'Saldo Estoque' para 'Saldo Físico' e adicionado a coluna 'Saldo Disponível'.</p>
+<p>Acesso em: Vendas &gt; Pedidos de venda&gt; Mais opções &gt; Alterar &gt; Reservas de estoque</p>
+<p><strong>Orçamento</strong></p>
+<p>Aprimorado processo de Orçamento. </p>
+<p>Alterações: </p>
+<ul>
+<li>O campo frete (Inserido na aba "Preço") é informado em percentual;</li>
+<li>As despesas fixas do Orçamento serão incorporadas ao custo;</li>
+<li>Criado parâmetro "Forma de cálculo para orçamento". Nele existem duas opções de configuração: Margem de Contribuição e Margem de Lucro. Ao selecionar "Margem de Lucro"  a opção "Preço Margem Zero" que fica na aba "Preço" é ocultada e a opção "% Margem de contribuição" é substituída por "Margem de lucro";</li>
+<li>O Orçamento agora calcula o Orçamento de forma individual. Ou Seja: Mesmo ao informar a Quantidade no início do cadastro com mais de uma unidade, o sistema não irá multiplicar os valores finais do item pela quantidade informada no início, como era feito anteriormente.</li>
+</ul>
+<p>Acesso em: Vendas &gt; Orçamento</p>
+<h2 id="1430">1.43.0</h2>
+<h3 id="novas-funcionalidades_3">Novas funcionalidades</h3>
+<p><strong>Cadastro de clientes</strong></p>
+<p>Disponibilizado o processo de cálculo de Juros por clientes: adicionado o campo “Juros do cliente (%)” no cadastro de cliente, aba Financeiro.  Essa alteração permite calcular juros diferente por cliente.  Agora o sistema busca a taxa no cadastro de cliente, caso não tenha % informado, efetua a busca no cadastro de portador.</p>
+<p>Adicionado no cadastro de clientes, aba Financeiro, os campos de Instrução bancária. A emissão do boleto e cobrança, irá verificar as instruções do cliente, caso não tenha informação, segue buscando os dados de instruções da configuração da cobrança bancária normalmente.</p>
+<p>Disponibilizado no cadastro de Clientes, aba Fiscal, os campos de alíquotas de retenção: INSS, PIS, COFINS e CSLL, para permitir particularizar as alíquotas por clientes, caso não tenha dado no cadastro do cliente, o sistema continua utilizando os dados do cadastro do Tipo de saída.</p>
+<p>Acesso em: Vendas &gt; Clientes</p>
+<p><strong>Váriáveis padrões para formação de preços</strong></p>
+<p>Disponibilizado o cadastro Variáveis padrões para a formação de preços, para informar os valores padrão para compor a formação de preços. </p>
+<p>Acesso em: Vendas &gt; Listas &gt; Variáveis para formação de preço</p>
+<p><strong>Orçamentos</strong></p>
+<p>Disponibilizado o recurso de Orçamento para atender a necessidade de elaborar um projeto de produto sob medida, podendo utilizar produtos que não estão cadastrados, gerando novos produtos específicos para determinada atividade. No orçamento tem-se a possibilidade de relacionar todos os custos e despesas do projeto, realizando a viabilidade e elaborando uma proposta.</p>
+<p>Seu acesso é realizado pelo Módulo Vendas, botão Orçamentos.</p>
+<p>Ao criar um novo Orçamento deve-se informar os dados de cadastro do item, após processa-lo pode-se abrir o Orçamento clicando no ícone de Cubo ao lado do status, onde apresenta o andamento do processo:</p>
+<p>Estrutura:  Cadastro da estrutura do produto orçado.</p>
+<p>•   Importar estrutura: abre uma tela para selecionar a estrutura do item no PCP, sendo permitido quando o produto é um item cadastrado.</p>
+<p>•   Novo: gera nova estrutura onde deve-se informar item por item</p>
+<p>Pode inserir qualquer item diferente de imobilizado e serviço.</p>
+<p>Para produtos diferentes de Produto acabado, deve-se configurar o custo para cálculo de margem em Parametrização &gt; Vendas, para definir se deve buscar o último custo ou o custo médio do item.</p>
+<p>Roteiro: Cadastro do roteiro de produção do item.</p>
+<p>•   Importar roteiro: abre uma tela exibindo os roteiros que o produto está vinculado. Essa opção pode ser usada quando o item é um produto cadastrado.</p>
+<p>•   Novo: gera novo roteiro onde deve-se informar operação por operação.</p>
+<p>Serviços: Cadastro dos serviços realizados.</p>
+<p>•   Pode-se inserir itens do tipo serviço.</p>
+<p>•   Pode-se inserir serviços não cadastrados.</p>
+<p>Terceirização: Cadastro para informar os itens do tipo serviço.</p>
+<p>•   Pode-se inserir serviços não cadastrados.</p>
+<p>Outros custos: Cadastro para informar outros valores de custos não especificados nas outras áreas.</p>
+<p>•   Deve-se informar o custo</p>
+<p>•   E o sistema sugere o valor padrão do custo que está cadastrado.</p>
+<p>Custo: Mostra os totalizadores das etapas anteriores (Custo total é a soma de todos os custos).</p>
+<p>Preço: Essa aba totaliza o preço, pode receber outras variáveis e mostra o preço final.</p>
+<p>•   Custo total: Repete o custo total da aba custos.</p>
+<p>•   Frete: Pode ser informado em valor.</p>
+<p>•   Comissão: Valor informado em %. Ao ser informado recalcula o preço com margem zero, preço sugerido, preço com desconto e preço.</p>
+<p>•   Impostos: Valor informado em %. Ao informar recalcula o preço com margem zero, preço sugerido, preço com desconto e preço.</p>
+<p>•   Despesas financeiras: Valor informado em %. Ao ser informado  recalcula o preço com margem zero, preço sugerido, preço com desconto e preço.</p>
+<p>•   Preço c/ margem zero. Valor calculado pelo sistema.</p>
+<p>•   Margem: Valor informado em %. Ao ser informado recalcula o preço sugerido, preço com desconto e preço de venda.</p>
+<p>•   Preço sugerido: Calculado pelo sistema.</p>
+<p>•   Desconto: Valor % informado: Ao ser informado recalcula o preço com desconto e o preço de venda.</p>
+<p>•   Preço c/ desconto: Calculado pelo sistema.</p>
+<p>•   Preço de venda: Sugerido pelo sistema igual ao preço com desconto. Esse campo pode ser alterado manualmente.</p>
+<p><strong>Formação de preço</strong></p>
+<p>Disponibilizado nova Formação de preços para produtos e mercadorias. A Formação não atende serviço e não serve para orçamento sob medida. Juntamente a esse recurso, foi disponibilizado o cadastro para informar os valores padrão para a formação de preço, chamado Variáveis padrões para formação de preços, acessível no botão Listas do módulo de Vendas, onde devem ser informados os dados das variáveis (valores) que compõe o preço, como Despesas, Despesas variáveis de venda e Preços de venda.</p>
+<p>Seu acesso é feito pelo módulo de vendas, através do botão (tile) Formação de preço ou diretamente no item, através do botão Mais opções &gt; Formação de preços. Após criar as variáveis padrões para a formação de preço e vincula-la numa tabela de preços com seus determinados itens, pode-se gerar uma formação.</p>
+<p>Para gerar uma formação, na tela de consultas, clicar no botão Novo.</p>
+<p>Regras para criar uma formação de preços:</p>
+<p>•   O item deve estar adicionado a uma tabela de preços.</p>
+<p>•   A Formação utiliza apenas tabela de preço em valor, as tabelas referenciadas ou em percentual não tem funcionalidade com a formação de preço.</p>
+<p>•   Utiliza a unidade de venda do item e aplica a conversão de unidade conforme o item.</p>
+<p>Na tela do cadastro da Formação, foi disponibilizado a opção Filtrar (link posicionado no lado direito da tela), que dispõe de opções para busca de dados.</p>
+<p>Pode-se Adicionar itens ou Adicionar tabelas, carregando na grade os dados conforme selecionados.</p>
+<p>No botão Mais opções da tela de cadastro da Formação de preços, está disponível as opções:</p>
+<p>•   Alterar todos</p>
+<p>•   Definir tipo de aplicação de preços</p>
+<p>•   Remover tabelas</p>
+<p>Regras para aplicar o preço:</p>
+<p>•   Ao aplicar preços, os mesmos são convertidos para a unidade da tabela de preços, o novo preço é aplicado em todas as unidades da tabela.</p>
+<p>•   Se o item controlar preço mínimo e máximo, os mesmos também serão atualizados conforme o % de variação do preço de venda antigo X novo.</p>
+<p>•   O Markup é alterado no item da tabela de preços.</p>
+<p>Na tela de consulta da Formação de preços, botão Mais opções, temos as opções:</p>
+<p>•   Aplicar preços</p>
+<p>•   Arquivar: Oculta a Formação de preços, não sendo possível seu acesso posteriormente</p>
+<p>•   Cancelar: Esta opção é permitida para Formação não finalizada. Sua função é apenas descartar uma Formação iniciada e não concluída.</p>
+<p>•   Copiar</p>
+<p>•   Ratrear NF: Caso a formação tenha sido gerada com origem em Nota fiscal de entrada</p>
+<h3 id="manutencao_16">Manutenção</h3>
+<p><strong>Validação de preço mínimo e máximo</strong></p>
+<p>Corrigido processo de atualização de preços da tabela de preços, para efetuar a validação de preço mínimo e máximo. Caso o preço máximo for menor que o preço base, exibirá mensagem informativa.</p>
+<p>Acesso em: Vendas &gt; Tabela de preços de venda</p>
+<p><strong>Impressão do DANFE</strong></p>
+<p>Correção na impressão do DANFE da Nota fiscal de saída, onde ocorria a mensagem “Falha ao carregar documento PDF”.</p>
+<p><strong>Edição das mensagens na Nota fiscal de saída</strong></p>
+<p>Corrigido o processo de Mensagens na nota fiscal de saída (informação complementar), permitindo excluir as mensagens desnecessárias e processar a nota, sem que as mesmas retornem. </p>
+<p>Acesso em: Vendas &gt; Notas fiscais de saída</p>
+<p><strong>Validação da unidade ao copiar um item</strong></p>
+<p>Alterado o processo de cópia de item, para validar a unidade do Item dentro do grupo “Material de uso e consumo”, permitindo salvar o cadastro.</p>
+<p>Acesso em: Vendas &gt; Itens e serviços &gt; Mais opções &gt; Copiar</p>
+<p><strong>Atualização manual da NFS-e</strong></p>
+<p>Corrigido o processo de atualização e cancelamento manual da NFS_e.</p>
+<p>Acesso em: Vendas &gt; Notas fiscais de serviços</p>
+<p><strong>Conversão de unidade</strong></p>
+<p>Aumentado a precisão do fator de conversão em todo o sistema. Alterado tela de unidades do cadastro do Item para suportar a informação, sendo possível cadastrar até 10 casas decimais nas unidades.</p>
+<p>Acesso em: Vendas &gt; Itens e serviços</p>
+<p><strong>Copiar registro de cliente</strong></p>
+<p>Efetuado otimização no tempo e  tamanho do arquivo, ao gerar cópias de registro de um cliente, evitando o alto consumo de recurso do servidor.
+Obs: Essa otimização foi realizada em todos os processos de “Cópia” do sistema.</p>
+<p>Acesso em: Vendas &gt; Clientes &gt; Mais opções &gt; Copiar</p>
+<p><strong>Discriminação dos serviços na Nota fiscal de serviço</strong></p>
+<p>Aprimorado o campo Complemento, da aba Resumo da Nota fiscal de serviço, permitindo uma descrição com até 2000 caracteres. Para usar essa alteração, faz-se necessário configurar o Tipo de saída: selecionar o Tipo de saída de serviço &gt; aba Adm &gt; Campo Descrição para nota fiscal: escolher a opção Descrição do item + Complemento. Essa alteração também tem influência sobre o RPS.
+Acesso em: Vendas &gt; Notas fiscais de serviço</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../compras/" class="btn btn-neutral" title="Compras"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../compras/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

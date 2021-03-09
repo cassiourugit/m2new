@@ -13,6 +13,8 @@ Neste portal você terá acesso as novidades da versão com a descrição dos no
 |[Mais versões >> ](~/2.0/historico_versoes.md)                | -----   | 
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A_DSMp8T8jc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
 # Novidades nas liberações de versões
 
 **Possuímos liberações contínuas nas versões do sistema M2**
