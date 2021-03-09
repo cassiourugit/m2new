@@ -22,6 +22,8 @@ Neste portal você terá acesso as novidades da versão com a descrição dos no
 [Clique aqui](./Versões/1.43/compras.md) para conferir o que preparamos para agilizar a solução das solicitações de alterações do sistema.
 
 
+# Oi
+
 # Novos recursos
 
 **Você sabia que investimos em processos inteligentes para auxiliar a sua usabilidade no sistema?**
